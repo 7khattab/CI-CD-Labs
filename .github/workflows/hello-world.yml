@@ -1,0 +1,11 @@
+name: Hello World Workflow
+
+on: [push]
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a message
+        run: echo "🎉 Hello, GitHub Actions is working!"
+      -  uses: actions/checkout@v4
