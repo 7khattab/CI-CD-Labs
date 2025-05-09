@@ -18,8 +18,12 @@ labs/
 │ └── .github/workflows/receive_dispatch.yml
 ├── lab4-scheduled-and-manual/
 │ └── .github/workflows/schedule_manual.yml
+|---lab5-run workflow on Docker container
+|    |-- .github/workflows/workflow-on-docker.yml
+|    
 └── README.md
-
+|---APP/
+     | -- hello.py
 
 ---
 
@@ -47,10 +51,39 @@ labs/
 ### ⏰ Lab 4: Schedule and Manual Triggers
 > Combine scheduled CRON triggers and manual UI/API triggers in one workflow.
 
+### 🐳 Lab 5: Run Workflow Jobs in Docker Containers
+
+Run GitHub Actions jobs inside Docker containers using the container keyword.
+
+Use a Python Docker image to verify version and run scripts.
+
 ---
+
+🧰 Tools & Technologies Used
+
+GitHub Actions
+
+GitHub REST API
+
+Git
+
+Docker
+
+Python
+
+GitLab (for cross-CI testing)
+
+
 
 ## 📄 How to Use
 
 1. Clone the repo:
    ```bash
    git clone https://github.com/your-username/github-actions-labs.git
+
+
+👤 Author
+
+Mohamed Khattab
+DevOps & Cloud Enthusiast | Egypt
+
