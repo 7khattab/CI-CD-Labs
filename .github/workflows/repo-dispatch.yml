@@ -1,0 +1,17 @@
+name: trigger gitlab pipeline
+on:
+  repository_dispatch:
+    types: [run] 
+
+jobs:
+  call-gitlab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: trigger gitlab code
+        run: |
+           curl -X POST \
+            -F token=${{ secrets.GITLAB_TRIGGER_TOKEN }} \
+            -F ref=main \
+            -F variables[EVENT_TYPE]=run \
+            https://gitlab.com/api/v4/projects/69699272/trigger/pipeline  
+            echo "alles okay"                    

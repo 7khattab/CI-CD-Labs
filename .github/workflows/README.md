@@ -17,6 +17,9 @@ Location: `.github/workflows/hello-world.yml`
 The job will simply print:
 
 
+
+
+
 # Lab 2: Triggering GitHub Workflow Based on Repository Events
 
 This lab demonstrates how to create a GitHub Actions workflow that responds to different events in the repository such as pushes, pull requests.
@@ -30,6 +33,23 @@ The `event-trigger.yml` file under `.github/workflows` defines three triggers:
 - `push` to main
 - `pull_request` to main
 
+
+
+
+
+# Lab 3: Repository Dispatch and Cross-Repo Workflows
+
+## 📝 Description
+This lab simulates how to trigger GitHub Actions workflows in one repository from another using the `repository_dispatch` API event. Useful for decoupling source and CI/CD logic.
+
+## 🔄 Flow
+1. Repo A pushes code
+2. A script or GitHub Action calls the GitHub API
+3. Repo B receives the `repository_dispatch` and runs a workflow
+
+## 🛠️ Requirements
+- GitHub Personal Access Token with repo/workflow scope
+- The receiving repo must listen for `repository_dispatch` events
 
 
 
