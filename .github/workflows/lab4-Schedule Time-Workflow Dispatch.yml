@@ -1,0 +1,19 @@
+name: Manual and Scheduled Workflow
+
+on:
+  # Manual trigger via GitHub UI or API
+  workflow_dispatch:
+
+  # Scheduled trigger using CRON
+  schedule:
+    - cron: '3 * * * *'  
+
+jobs:
+  run-tasks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show Current Date and Time
+        run: date
+
+    

@@ -29,3 +29,23 @@ This lab demonstrates how to create a GitHub Actions workflow that responds to d
 The `event-trigger.yml` file under `.github/workflows` defines three triggers:
 - `push` to main
 - `pull_request` to main
+
+
+
+
+
+
+# Lab 4: Schedule Time and Manual Workflow Dispatch
+
+## 🎯 Objective
+This lab demonstrates how to:
+- Manually trigger a GitHub Actions workflow using `workflow_dispatch`.
+- Automatically run the same workflow on a schedule using `cron`.
+- Use user-defined inputs when triggering the workflow manually.
+
+## 📅 Scheduled Time
+The workflow runs every 3 minute.
+
+## 🛠 Manual Trigger
+You can trigger the workflow from GitHub's "Actions" tab and optionally provide a **reason**.
+
