@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - "main"
-  
+
   pull_request:
     branches:
       - "main"
@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print event name
-        run: echo " event triggered " && echo "$github.event_name "
-        shell: bash 
-      
+        run: echo "event triggered: $github.event_name"
+        shell: bash
+
       - name: show branch
-        run: echo " branch:" && echo " $github.ref" 
+        run: echo "branch: $github.ref"
