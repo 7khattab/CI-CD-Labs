@@ -15,5 +15,5 @@ jobs:
     steps:
       - name: Show Current Date and Time
         run: date
-
+        shell: bash 
     
