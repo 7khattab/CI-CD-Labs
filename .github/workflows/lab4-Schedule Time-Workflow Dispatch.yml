@@ -3,6 +3,10 @@ name: Manual and Scheduled Workflow
 on:
   # Manual trigger via GitHub UI or API
   workflow_dispatch:
+    inputs:
+      manual:
+        description: 'that will run manual type ok'
+        required: true       
 
   # Scheduled trigger using CRON
   schedule:
