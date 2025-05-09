@@ -13,8 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print event name
-        run: echo "event triggered: $github.event_name"
+        run:  |
+          echo "event triggered: $github.event_name"
         shell: bash
 
       - name: show branch
-        run: echo "branch: $github.ref"
+        run: |
+           echo "branch: $github.ref"
