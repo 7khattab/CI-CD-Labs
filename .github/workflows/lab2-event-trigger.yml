@@ -19,4 +19,4 @@ jobs:
 
       - name: show branch
         run: |
-         echo "branch:" $github.ref"
+         echo "branch:" $github.ref
