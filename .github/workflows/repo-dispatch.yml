@@ -13,5 +13,5 @@ jobs:
             -F token=${{ secrets.GITLAB_TRIGGER_TOKEN }} \
             -F ref=main \
             -F variables[EVENT_TYPE]=run \
-            https://https://gitlab.com/mk-khattab-group/ci-repo_dispatch/projects/69699272/trigger/pipeline  
+            https://gitlab.com/mk-khattab-group/ci-repo_dispatch/projects/69699272/trigger/pipeline  
                                
