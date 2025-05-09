@@ -52,6 +52,16 @@ This lab simulates how to trigger GitHub Actions workflows in one repository fro
 - The receiving repo must listen for `repository_dispatch` events
 
 
+# .gitlab-ci.yml
+stages:
+  - check
+
+listener_job:
+  stage: check
+  script:
+    - echo "Pipeline triggered"
+    - echo "Received event type: $EVENT_TYPE"
+
 
 
 
