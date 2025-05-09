@@ -14,9 +14,9 @@ jobs:
     steps:
       - name: print event name
         run:  |
-          echo "event triggered: $github.event_name"
+          echo "event triggered: $github-event_name"
         shell: bash
 
       - name: show branch
         run: |
-           echo "branch: $github.ref"
+           echo "branch: $github-ref"
